@@ -29,43 +29,54 @@
 
         <div class="card">
             <h1>Cadastrar</h1>
-  
+            
+
+            <div id="msgSuccess"></div>
+            <div id="msgError"></div>
+
+
             <div class="label-float">
                 <input type="text" id="nome" placeholder='' required>
-                <label for="nome">Nome</label>
+                <label id="labelNome" for="nome">Nome</label>
             </div>
   
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder='' required>
+                <label id="labelUsuario" for="nome">Usuário</label>
+            </div>
+
             <div class='label-float'>
                 <input type="password" id="senha" placeholder="" required>
-                <label for="senha">Senha</label>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <label id="labelSenha" for="senha">Senha</label>
+                <i id = 'verSenha' class="fa fa-eye" aria-hidden="true"></i>
             </div>
 
             <div class='label-float'>
                 <input type="password" id="confirmSenha" placeholder="" required>
-                <label for="confirmSenha">Confirme a Senha</label>
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <label id="labelConfirmSenha" for="confirmSenha">Confirme a Senha</label>
+                <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
             </div>
 
             <div class='label-float'>
-                <input type="password" id="endereco" placeholder="" required>
-                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="" required>
+                <label id="labelEndereco" for="endereco">Endereço</label>
             </div>
         
             <div class='label-float'>
-                    <input type="password" id="cidade" placeholder="" required>
-                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" placeholder="" required>
+                    <label id="labelCidade" for="cidade">Cidade</label>
             </div>
         
             <div class='label-float'>
-                        <input type="password" id="idade" placeholder="" required>
-                        <label for="idade">Data de Nascimento</label>
+                        <input type="text" id="idade" placeholder="" required>
+                        <label id="labelIdade"  for="idade">Idade</label>
             </div>
             
             <div class=justify-center>
-              <button>Cadastrar</button> 
+              <button onclick="cadastrar()">Cadastrar</button> 
             </div>
     
 </body>
 <script src="js/eye.js"></script>
+<script src="js/cadastro.js"></script>
 </html>
