@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta hrrp-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/historias.css"/>
+    <script>if(localStorage.getItem('token') == null){
+        alert('Você precisa estar logado')
+        window.location.href = 'login.html'
+    }</script>
+    <body>
+
 
 <div class="header">
     <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">LOJA DE BEBIDAS</h1>
@@ -21,28 +26,24 @@
     <a href="login.html" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">LOGIN</a>
     <a href="cadastro.html" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">CADASTRE-SE</a>
     <a href="inicio.html" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">PAINEL DO USUARIO</a>
+    <button onclick="sair()">Sair</button>
 </div>
-    <title>LOJA DE BEBIDAS</title>
-</head>
-
-<body>
-    <div class="contato">
-        <h1>CONTATO</h1>
-        <h3>INSTAGRAM</h3>
-        <a href="">instagram.com/####</a>
-        <h3>FACEBOOK</h3>
-        <a href="">facebook.com/####</a>
-        <h3>TELEFONE</h3>
-        <p>(35) 99969-6969</p>
-    </div>
-</body>
-<footer>
-    <div class="menu">
-        <a href="carrinho.html" >Compre na Nossa loja</a>
+    <h1 id='logado'></h1>
+    
+    <div class="promocao">
+    <h1>Promoção da semana:</h1><h2>Aproveite o desconto de 10% em todos nossos produtos para nossos clientes... </h2>
         </div>
 
-    <div class="copy">
-    <p>Copyright © 2022 Álvaro Leonel, Wesley Pereira, Patrick Bernardes.</p>
+    <div class="imagens">
+        <img src="img/ciroc.png" alt="ciroc">
+        <img src="img/kisspng-chivas-regal-scotch-whisky-blended-whiskey-distill-whisky-5acf2e5d59aff8.9814623215235272613674.png" alt="">
+        <img src="img/kisspng-whiskey-the-macallan-distillery-single-malt-scotch-18-years-old-5b17a9793c4b45.858809541528277369247.png" alt="">
     </div>
-</footer>
+    <br>
+    <div class="compre">
+    <a href="carrinho.html">Comprar agora</a>
+    </div>
+
+    <script src="/js/inicio.js"></script>
+</body>
 </html>

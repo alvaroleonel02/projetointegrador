@@ -1,11 +1,17 @@
-
-
 .header {
-  background-color: rgb(25, 25, 25);
-  padding: auto;
+  background-color:  rgb(22 22 22 / 80%);
   text-align: center;
   padding: 10px;
 }
+
+
+
+.header h1{
+color: #ffffff;
+padding-top: 10px;
+text-align: center;
+}
+
 .topnav {
   overflow: hidden;
   background-color: rgb(20, 20, 20);
@@ -14,13 +20,13 @@
   text-align: center;
 }
 .topnav a {
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
   padding: 12px 10px;
   text-decoration: none;
 }
 
-/* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -38,10 +44,39 @@ nav{
   text-decoration: none;
 }
 
+.desc h1{
+  padding-top: 20px;
+}
+
 .header p{
   display: block;
   color: #ffffff;
   text-align-last: center;
   padding: 4px 2px;
   text-decoration: white;
+}
+
+.comprar p{
+  font-size: 15px;
+}
+
+.menu {
+  overflow: hidden;
+  background-color: rgb(20, 20, 20);
+  list-style: none;
+  padding: 16px 14px;
+  text-align: center;
+}
+.menu a {
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  padding: 4.5px;
+ transition: .4s;
+  background-color: #ddd;
+  color: black;
 }
